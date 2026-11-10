@@ -1,0 +1,80 @@
+## 🚀 Getting Started – Run Locally
+
+Follow these steps to run Dukaan Suno on your local machine.
+
+### Prerequisites
+
+Make sure you have installed:
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- npm (comes with Node.js)
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/dukaan-suno.git
+cd dukaan-suno
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+If the client has its own `package.json`, install its dependencies as well:
+
+```bash
+cd client
+npm install
+cd ..
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the location expected by the backend.
+
+Add your Gnani AI API credentials using the variable names expected by your implementation.
+
+```env
+GNANI_PRISMA_API_KEY=your_prisma_api_key
+GNANI_TIMBRE_API_KEY=your_timbre_api_key
+```
+
+**Important:** These are illustrative variable names. Use the exact names referenced in your source code. Never commit actual API keys to GitHub.
+
+### 4. Start the Application
+
+Start the backend server using the project's configured start command.
+
+Start the frontend development server using the configured Vite command.
+
+The frontend and backend may run on separate local ports. Use the URLs printed in your terminal.
+
+### 5. Explore Dukaan Suno
+
+Once both services are running:
+
+1. Open the frontend URL in your browser.
+2. Allow microphone access when prompted.
+3. Connect to the live Gnani Prisma API.
+4. Speak a sample grocery order.
+5. Review and edit the generated order slip.
+6. Build the order and listen to the Gnani Timbre read-back.
+7. Record the reviewed sale in the demo Khata.
+
+### 🧪 Sample Voice Input
+
+```text
+Sharma ji ke khate mein likh do:
+2 kilo atta aur 1 packet butter.
+```
+
+### ⚠️ Important Notes
+
+- A working internet connection is required for live API communication.
+- Valid Gnani AI API credentials are required for voice functionality.
+- Keep API credentials private.
+- Demo prices and customer Khata accounts are illustrative.
+- Orders require shopkeeper review and confirmation.
